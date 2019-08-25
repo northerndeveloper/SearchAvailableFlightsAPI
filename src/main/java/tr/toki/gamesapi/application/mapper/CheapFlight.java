@@ -1,10 +1,7 @@
 package tr.toki.gamesapi.application.mapper;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * Cheap Flight object which is used to map from RestService to CheapFlight object
@@ -19,10 +16,11 @@ public class CheapFlight {
     private String route;
 
     @JsonProperty(value="departure")
-    private String departure; //TODO change format
+    private String departure;
 
     @JsonProperty(value="arrival")
-    private String arrival; //TODO change format
+    private String arrival;
+
 
 
 }
